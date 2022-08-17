@@ -1,8 +1,10 @@
-*/Estilos de css*/
-
+/*Encabezado*/
 
 .encabezado{
     background: #e1fde0;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 3rem;
 }
 
 .encabezado_inicio{
@@ -10,12 +12,27 @@
     padding: 32px 10%;
 }
 
+.encabezado .encabezado_inicio{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .logo{
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; 
 }
 
 .encabezado_items{
     width: 100%;
+}
+
+.logo, .encabezado_items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .caja_buscar{
@@ -39,9 +56,14 @@
 }
 
 .objeto_buscar{
-    margin-right: 15px;
-    color: #A2A2A2;
+    margin-right: 30px;
+    background-image: url(./img/buscar.png);
+    background-repeat: no-repeat;
+    background-size: 1.3rem;
+    background-position: 0%;
+    padding: 2% 5%;
 }
+
 .boton_login{
     box-sizing: border-box;
     color: #2a7ae4;
@@ -49,6 +71,13 @@
     width: 182px;
     height: 51px;
 }
+
+.boton_login{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+
 
 .boton_login:hover{
     background: #D4E4FA;
@@ -64,33 +93,42 @@
     */
 }
 
+.encabezado .promocion{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
 .texto_promocion{
     width: 100%;
     height: auto;
     padding: 32px 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px
 }
 
 .titulo_promocion{
-    color: #000000;
+    color: rgb(252, 86, 252);
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 1000;
     font-size: 52px;
     line-height: 61px;
 }
 
 .descripcion_promocion{
-    color: #000000;
+    color: rgb(250, 212, 250);
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 1000;
     font-size: 22px;
     line-height: 26px;
 }
 
 .boton_promocion{
-    color: #000000;
-    background: #2A7AE4;
+    color: rgb(250, 212, 250);
+    background: #3ead4cff;
     width: 129px;
     height: 51px;
     border-style: none;
@@ -102,20 +140,186 @@
 }
 
 .boton_promocion:hover{
-    background: #5595E9;
+    background: rgb(252, 86, 252);
+}
+
+/*Main*/
+
+.main{
+    background: rgb(252, 86, 252);
+}
+
+.mujer .mujer_principales{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mujer .mujer_descripcion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.ninas .ninas_principal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.ninas .ninas_descripcion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.variedad .variedad_principal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.variedad .variedad_descripcion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
 }
 
 
-/*Gama de dispositivos*/
+/*Pie de pagina*/
+
+.pie_inicio .menu_contacto{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_contacto .caja_contacto{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.caja_contacto .contenido_contacto{
+    display: flex;
+}
+
+.caja_contacto .main{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.menu_contacto .contenido_contacto{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+/*Pie redes sociales*/
+
+div p.creador{
+    color: blue;
+    margin-bottom: 0.4rem;
+}
+
+div div.redessociales{
+    display: relative;
+}
+
+div div.redes{
+    position: absolute;
+    right: 0;
+}
+
+div div.redessociales li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+div li a img{
+    height: 2rem;
+    height: 2rem;
+}
+
+div li a img:hover{
+    transform: scale(1.9)
+}
+
+
+/*Configuracion screen para dispositivos dispositivos*/
+
 
 @media screen and (max-width:1280px){
+    .encabezado_inicio, .texto_promocion{
+        padding: 32px 5%;   
+    }
 
 }
 
 @media screen and (max-width:768px){
 
+    .encabezado{
+        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+
+    .encabezado_inicio{
+        flex-direction: column;
+        justify-content: left;
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+
+    .encabezado_items{
+        flex-direction: column;
+        margin: 1rem auto;
+        justify-content: left;
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+
+    .encabezado_items img{
+        width: auto;
+        height: 30px;
+        order: 0;   
+    }
+
+
 }
 
 @media screen and (max-width:360px){
 
+    .encabezado_items img{
+        width: auto;
+        height: 28px;
+        order: 0;   
+    }
+
+    .objeto_buscar{
+        background: #ffffff;
+        order: 2;
+    }
+
+    .buscar{
+        display: none;
+    }
+
+    .boton_login{
+        order: 1;
+        width: 133px;
+        height: 40px;
+    }
+
+    .titulo_promocion, .descripcion_promocion{
+        font-size: 22px;
+        line-height: 16px;
+    }
 }
