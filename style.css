@@ -4,7 +4,6 @@
     background: #e1fde0;
     align-items: flex-end;
     justify-content: space-between;
-    margin-bottom: 3rem;
 }
 
 .encabezado_inicio{
@@ -140,13 +139,44 @@
 }
 
 .boton_promocion:hover{
-    background: rgb(252, 86, 252);
+    background: rgb(243, 122, 243);
 }
+
 
 /*Main*/
 
-.main{
-    background: rgb(252, 86, 252);
+.cuerpo_principal{
+    padding: 4rem 0.5rem 2rem 0.5rem;
+    background: rgb(247, 217, 245);
+}
+
+.titulo_seccion{
+    color: rgb(4, 190, 29);
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 26px;
+    margin: 0 0 1rem 1rem;
+}
+
+.boton_expandir{
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 26px;
+    margin: 0 1rem 1rem 0;
+}
+
+ul li{
+    margin: 0.4rem 0 0.4rem 0;
+    text-align: center;
+}
+
+.cuerpo_principal a{    
+    color: rgb(2, 100, 15);
+    text-decoration:none;
 }
 
 .mujer .mujer_principales{
@@ -163,6 +193,7 @@
 }
 
 .ninas .ninas_principal{
+    padding-top: 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center; 
@@ -176,6 +207,7 @@
 }
 
 .variedad .variedad_principal{
+    padding-top: 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center; 
@@ -190,6 +222,10 @@
 
 
 /*Pie de pagina*/
+
+.pie_inicio{
+    padding-top: 3rem;
+}
 
 .pie_inicio .menu_contacto{
     display: flex;
@@ -220,32 +256,35 @@
 
 /*Pie redes sociales*/
 
-div p.creador{
+.pie_fin{
+    background: #e1fde0;
+    text-align: center;
+    padding:  3rem 0 3rem 0;
+}
+
+.pie_creador{
     color: blue;
-    margin-bottom: 0.4rem;
+    margin-bottom: 1.5rem;
 }
 
-div div.redessociales{
-    display: relative;
+.pie_redessociales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-div div.redes{
-    position: absolute;
-    right: 0;
+.redes_sociales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-div div.redessociales li{
-    display: inline;
-    margin: 0 0 0 15px;
-}
-
-div li a img{
-    height: 2rem;
+.imagenesredes{
     height: 2rem;
 }
 
-div li a img:hover{
-    transform: scale(1.9)
+.imagenesredes:hover{
+    transform: scale(2)
 }
 
 
@@ -291,7 +330,6 @@ div li a img:hover{
         height: 30px;
         order: 0;   
     }
-
 
 }
 
