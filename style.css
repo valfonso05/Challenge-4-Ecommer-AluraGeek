@@ -225,11 +225,38 @@ ul li{
 
 .pie_inicio{
     padding-top: 3rem;
+    background: #e1fde0;
+}
+
+.pie_presentacion a{    
+    color: rgb(2, 100, 15);
+    text-decoration:none;
+}
+
+.menu_contacto{
+    margin: 0 auto;
+    padding: 16px 10%;
 }
 
 .pie_inicio .menu_contacto{
     display: flex;
     justify-content: space-between;
+}
+
+.caja_contacto{
+    width: 40%;
+}
+
+.pie_contenedor{
+    padding-bottom: 16px;
+}
+
+.contacto_formulario{
+    width: 50%;
+}
+
+.contacto{
+    width: 100%;
 }
 
 .menu_contacto .caja_contacto{
@@ -242,7 +269,7 @@ ul li{
     display: flex;
 }
 
-.caja_contacto .main{
+.caja_contacto .pie_presentacion{
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -254,10 +281,57 @@ ul li{
     flex-direction: column;
 }
 
+.titulo_contacto{
+    color: black;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 8px;
+}
+
+.entrada_nombre{
+    width: 100%;
+    height: 56px;
+    background: #ffffff;
+    border-radius: 4px;
+    border: none;
+    border-bottom: 1px solid #c8c8c8;
+    margin-bottom: 8px;
+}
+
+.entrada_mensaje{
+    width: 100%;
+    height: 82px;
+    background: #ffffff;
+    border-radius: 4px;
+    border: none;
+    border-bottom: 1px solid #c8c8c8;
+    margin-bottom: 8px;
+}
+
+.boton_contacto{
+    color: #ffffff;
+    width: 144px;
+    height: 51px;
+    background: #2a7ae4;
+    border-style: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.boton_contacto:hover{
+    background: #5595e9;
+}
+
 /*Pie redes sociales*/
 
 .pie_fin{
-    background: #e1fde0;
+    background:rgb(255, 232, 253);
     text-align: center;
     padding:  3rem 0 3rem 0;
 }
@@ -331,6 +405,20 @@ ul li{
         order: 0;   
     }
 
+    .mujer_descripcion, .ninas_descripcion, .variedad_descripcion{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .caja_contacto{
+        flex-direction: column;
+    }
+
+    .logo_pie{
+        width: 100%;
+    }
+
+
 }
 
 @media screen and (max-width:360px){
@@ -360,4 +448,5 @@ ul li{
         font-size: 22px;
         line-height: 16px;
     }
+
 }
