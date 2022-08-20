@@ -1,0 +1,87 @@
+/*Estilos css para agregar productos*/
+
+.formulario{
+    background: rgb(247, 217, 245);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 91px 0;
+}
+
+.formulario_polos{
+    text-align: left;
+}
+
+.titulo_agregar{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #464646;
+}
+
+.agregar_producto{
+    padding: 16px 0;
+}
+
+.agregar{
+    padding-left: 10px;
+    width: 549px;
+    height: 56px;
+    background: #ffffff;
+    border-radius: 4px;
+    border: none;
+    border-bottom: 1px solid #c8c8c8;
+}
+
+.agregar_descripcion{
+    padding-left: 10px;
+    width: 549px;
+    height: 82px;
+    background: #ffffff;
+    border-radius: 4px;
+    border: none;
+    border-bottom: 1px solid #c8c8c8;
+}
+
+.boton_agregar{
+    color: #ffffff;
+    width: 559px;
+    height: 51px;
+    background: #2a7ae4;
+    border-style: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.boton_agregar:hover{
+    background: #5995e9;
+}
+
+@media screen and (max-width:768px){
+
+    .formulario_polos{
+        margin: 0 5%;
+        width: 95%;
+    }
+    .agregar, .agregar_descripcion{
+        width: 96%;
+     
+    }
+    .boton_agregar {
+        width: 100%;
+    }
+
+}
+@media screen and (max-width:360px){
+    
+    .itulo_agregar{
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+    }
+}

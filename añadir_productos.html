@@ -8,6 +8,7 @@
      <!-- Referencia de la hoja de estilo de Css -->
      <link rel="stylesheet" href="reset.css">
      <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="añadir_productos.css">
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <!-- Fonte del Proyecto Raleway -->
@@ -47,11 +48,15 @@
                         <label class="agregar_etiqueta" for="categoria"></label>
                     </div>
                     <div class="agregar_producto">
+                        <input name="nombrePolos" id="nombrePolos" class="agregar" type="text" placeholder="Nombre del polo" required data-tipo="nombrePolos">
+                        <label class="agregar_etiqueta" for="nombrePolos"></label>
+                    </div>
+                    <div class="agregar_producto">
                         <input name="precioPolos" id="precioPolos" class="agregar" type="text" placeholder="Precio del polo" required data-tipo="precioPolos">
                         <label class="agregar_etiqueta" for="precioPolos"></label>
                     </div>
                     <div class="agregar_producto">
-                        <input name="descripcionPolos" id="descripcionPolos" class="agregar" type="text" placeholder="Descripción del polo" required data-tipo="descripcionPolos">
+                        <input name="descripcionPolos" id="descripcionPolos" class="agregar_descripcion" type="text" placeholder="Descripción del polo" required data-tipo="descripcionPolos">
                         <label class="agregar_etiqueta" for="descripcionPolos"></label>
                     </div>
                 </fieldset>
