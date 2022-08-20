@@ -1,0 +1,198 @@
+/*Estilos css de productos relacionados*/
+
+.bloque_polos{
+    background: #e5e5e5;
+}
+
+.polo_principal{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 32px 10%;
+    gap: 32px
+}
+
+.polo_magical{
+    width: 560px;
+    height: auto;
+}
+
+.nombre_polo_portada{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 52px;
+    line-height: 61px;
+    color: #464646;
+    margin-bottom: 16px;
+}
+
+.costo_polo_portada{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+    margin-bottom: 16px; 
+}
+
+.resena_polo_portada{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+}
+
+.relacionados .titulo_relacionados{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.relacionados{
+    padding-bottom: 16px;
+}
+
+.titulo_relacionados{
+    margin: 0 auto;
+    padding: 16px 10%;
+}
+
+.tituloseg_relacionados{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #464646;
+}
+
+.polos_relacionados_info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 32px 10%;
+}
+
+.img_similares{
+    width: 100%;
+    height: 174px;
+}
+
+.nombre_polo{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #464646;
+    align-self: stretch;
+}
+
+.coste_polo{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+    align-self: stretch;
+}
+
+.enlace_polo{
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+}
+
+/*Configuracion screen para dispositivos dispositivos*/
+
+@media screen and (max-width:1024px) {
+
+    .bloque_ausente{
+        display: none;
+    }
+
+    .polo_magical{
+        width: 460px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .polo_principal{
+        padding: 16px 5%;
+    }
+
+    .polos_relacionados_info{ 
+        padding: 32px 5%;
+    }
+
+    .titulo_relacionados{
+        padding: 16px 5%;
+    }
+
+    .polo_magical{
+        width: 254px;
+        height: auto;
+    }
+
+    .nombre_polo_portada{
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .costo_polo_portada{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .resena_polo_portada{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .img_similares{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width:360px) {
+
+    .polo_principal{
+        flex-direction: column;
+    }
+
+    .img_similares{
+        width: 156px;
+        padding-bottom: 16px;
+    }
+
+    .polos_relacionados_info{
+        min-height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .polos_relacionados_info .bloque_similares{
+        display: flex; 
+        flex-basis: calc(50% - 10px);  
+        justify-content: center;
+        flex-direction: column;
+        padding-bottom: 16px;
+    }
+    
+}
