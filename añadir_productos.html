@@ -13,7 +13,7 @@
      <!-- Fonte del Proyecto Raleway -->
      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 
-	<title>Ladypolos - Alura Ecommerce</title>
+	<title> Agregar productos - Alura Ecommerce</title>
 		
 	</head>
 	<body>
@@ -28,260 +28,35 @@
                             <input type="text" class="buscar" placeholder="¿Qué deseas buscar?">
                             <a href="#"><i class="objeto_buscar"></i></a>
                         </div>
-                        <button class="boton_login" onclick="location.href='./login.html'">Login
+                        <button class="boton_login" onclick="location.href='./productos.html';">Menú Administrador
                         </button>
                     </div>
                 </div>
             </section>
-            <section class="promocion">
-                <div class="texto_promocion">
-                    <h1 class="titulo_promocion">Agosto Promocional</h1>
-                    <p class="descripcion_promocion">Polos seleccionados con 40% de descuento</p>
-                    <button class="boton_promocion">Ver Polos</button>
-                </div>
-            </section>
         </header>
-        <main class="cuerpo_principal">
-            <section class="mujer">
-                <div class="mujer_principales">
-                    <h2 class="titulo_seccion">Mujeres</h2>
-                    <a class="boton_expandir" href="#">Ver todo</a>
-                </div>
-                <div class="mujer_descripcion" data-polos>
-                    <div class=" contenedor_bloque_principal">
-                        <a class="enlace_producto" href="./descripcion.html">
-                            <img src="./img/polo_cafe.png" alt="">
-                            <div>
-                                <ul>
-                                    <li class="nombre_polo">Amantes del cafe</li>
-                                    <li>RD$600</li>
-                                    <li>Ver polo</li>
-                                </ul>
-                            </div>
-                        </a>
+        <main class="formulario">
+            <form action="#" class="formulario_polos">
+                <fieldset>
+                    <legend class="titulo_agregar">Agregar nuevo producto</legend>
+                    <div class="agregar_producto">
+                        <input name="agregar_imagen" id="agregar_imagen" class="agregar" type="text" placeholder="URL de imagen" required data-tipo="agregar_imagen">
+                        <label class="agregar_etiqueta" for="agregar_imagen"></label>
                     </div>
-                    <div class=" contenedor_bloque_principal">
-                        <a class="enlace_producto" href="./descripcion.html">
-                            <img src="./img/polo_corazonalegre.png" alt="">
-                            <div>
-                                <ul>
-                                    <li class="nombre_polo">Corazon alegre</li>
-                                    <li>RD$600</li>
-                                    <li>Ver polo</li>
-                                </ul>
-                            </div>
-                        </a>
+                    <div class="agregar_producto">
+                        <input name="categoria" id="categoria" class="agregar" type="text" placeholder="Categoria" required data-tipo="categoria">
+                        <label class="agregar_etiqueta" for="categoria"></label>
                     </div>
-                    <div class=" contenedor_bloque_principal">
-                        <a class="enlace_producto" href="./descripcion.html">
-                            <img src="./img/polo_firstcoffe.png" alt="">
-                            <div>
-                                <ul>
-                                    <li class="nombre_polo">Primero cafe</li>
-                                    <li>RD$600</li>
-                                    <li>Ver polo</li>
-                                </ul>
-                            </div>
-                        </a>
+                    <div class="agregar_producto">
+                        <input name="precioPolos" id="precioPolos" class="agregar" type="text" placeholder="Precio del polo" required data-tipo="precioPolos">
+                        <label class="agregar_etiqueta" for="precioPolos"></label>
                     </div>
-                    <div class=" contenedor_bloque_principal">
-                        <a class="enlace_producto" href="./descripcion.html">
-                            <img src="./img/polo_blessed.png" alt="">
-                            <div>
-                                <ul>
-                                    <li class="nombre_polo">Bendecida</li>
-                                    <li>RD$600</li>
-                                    <li>Ver polo</li>
-                                </ul>
-                            </div>
-                        </a>
+                    <div class="agregar_producto">
+                        <input name="descripcionPolos" id="descripcionPolos" class="agregar" type="text" placeholder="Descripción del polo" required data-tipo="descripcionPolos">
+                        <label class="agregar_etiqueta" for="descripcionPolos"></label>
                     </div>
-                    <div class=" contenedor_bloque_principal">
-                        <a class="enlace_producto" href="./descripcion.html">
-                            <img src="./img/polo_atrapasueno.png" alt="">
-                            <div>
-                                <ul>
-                                    <li class="nombre_polo">Atrapasieños</li>
-                                    <li>RD$600</li>
-                                    <li>Ver polo</li>
-                                </ul>
-                            </div>
-                        </a>
-                    </div>
-                    <div class=" contenedor_bloque_principal">
-                        <a class="enlace_producto" href="./descripcion.html">
-                            <img src="./img/polo_coffeJesus.png" alt="">
-                            <div>
-                                <ul>
-                                    <li class="nombre_polo">El cafe me activa</li>
-                                    <li>RD$600</li>
-                                    <li>Ver polo</li>
-                                </ul>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </section>
-            <section class="ninas">
-                <div class="ninas_principal">
-                    <h2 class="titulo_seccion">Niñas</h2>
-                    <a class="boton_expandir" href="#">Ver todo</a>
-                </div>
-                <div class="ninas_descripcion" data-polos>
-                    <div class=" contenedor_bloque_principal">
-                        <a class="enlace_producto" href="./descripcion.html">
-                            <img src="./img/polo_bebe.png" alt="">
-                            <div>
-                                <ul>
-                                    <li class="nombre_polo">Niña con pañuelo</li>
-                                    <li>RD$400</li>
-                                    <li>Ver polo</li>
-                                </ul>
-                            </div>
-                        </a>
-                    </div>
-                    <div class=" contenedor_bloque_principal">
-                        <a class="enlace_producto" href="./descripcion.html">
-                            <img src="./img/polo_negrita.png" alt="">
-                            <div>
-                                <ul>
-                                    <li class="nombre_polo">Niña con cintillo</li>
-                                    <li>RD$400</li>
-                                    <li>Ver polo</li>
-                                </ul>
-                            </div>
-                        </a>
-                    </div>
-                    <div class=" contenedor_bloque_principal">
-                        <a class="enlace_producto" href="./descripcion.html">
-                            <img src="./img/polo_ninapeluche.png" alt="">
-                            <div>
-                                <ul>
-                                    <li class="nombre_polo">Niña con cintillo y peluche</li>
-                                    <li>RD$400</li>
-                                    <li>Ver polo</li>
-                                </ul>
-                            </div>
-                        </a>
-                    </div>
-                    <div class=" contenedor_bloque_principal">
-                        <a class="enlace_producto" href="./descripcion.html">
-                            <img src="./img/polo_mickey.png" alt="">
-                            <div>
-                                <ul>
-                                    <li class="nombre_polo">Minnie Mouse</li>
-                                    <li>RD$400</li>
-                                    <li>Ver polo</li>
-                                </ul>
-                            </div>
-                        </a>
-                    </div>
-                    <div class=" contenedor_bloque_principal">
-                        <a class="enlace_producto" href="./descripcion.html">
-                            <img src="./img/polo_ninita.png" alt="">
-                            <div>
-                                <ul>
-                                    <li class="nombre_polo">Niña con cintillo azul</li>
-                                    <li>RD$400</li>
-                                    <li>Ver polo</li>
-                                </ul>
-                            </div>
-                        </a>
-                    </div>
-                    <div class=" contenedor_bloque_principal">
-                        <a class="enlace_producto" href="./descripcion.html">
-                            <img src="./img/polo_daysiduck.png" alt="">
-                            <div>
-                                <ul>
-                                    <li class="nombre_polo">Daysi Duck</li>
-                                    <li>RD$400</li>
-                                    <li>Ver polo</li>
-                                </ul>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </section>
-            <section class="variedad">
-                <div class="variedad_principal">
-                    <h2 class="titulo_seccion">Variedad</h2>
-                    <a class="boton_expandir" href="#">Ver todo</a>
-                </div>
-                <div class="variedad_descripcion" data-polos>
-                    <div class=" contenedor_bloque_principal">
-                        <a class="enlace_producto" href="./descripcion.html">
-                            <img src="./img/polo_corazon.png" alt="">
-                            <div>
-                                <ul>
-                                    <li class="nombre_polo">Corazon</li>
-                                    <li>RD$600</li>
-                                    <li>Ver polo</li>
-                                </ul>
-                            </div>
-                        </a>
-                    </div>
-                    <div class=" contenedor_bloque_principal">
-                        <a class="enlace_producto" href="./descripcion.html">
-                            <img src="./img/polo_ninos.png" alt="">
-                            <div>
-                                <ul>
-                                    <li class="nombre_polo">Mamá mi valentin</li>
-                                    <li>RD$700</li>
-                                    <li>Ver polo</li>
-                                </ul>
-                            </div>
-                        </a>
-                    </div>
-                    <div class=" contenedor_bloque_principal">
-                        <a class="enlace_producto" href="./descripcion.html">
-                            <img src="./img/polo_nurse.png" alt="">
-                            <div>
-                                <ul>
-                                    <li class="nombre_polo">Enfermera</li>
-                                    <li>RD$600</li>
-                                    <li>Ver polo</li>
-                                </ul>
-                            </div>
-                        </a>
-                    </div>
-                    <div class=" contenedor_bloque_principal">
-                        <a class="enlace_producto" href="./descripcion.html">
-                            <img src="./img/polo_valentine.png" alt="">
-                            <div>
-                                <ul>
-                                    <li class="nombre_polo">San Valentin en pareja</li>
-                                    <li>RD$1,000</li>
-                                    <li>Ver polo</li>
-                                </ul>
-                            </div>
-                        </a>
-                    </div>
-                    <div class=" contenedor_bloque_principal">
-                        <a class="enlace_producto" href="./descripcion.html">
-                            <img src="./img/polo_magical.png" alt="">
-                            <div>
-                                <ul>
-                                    <li class="nombre_polo">Magica o Maravillosa</li>
-                                    <li>RD$600</li>
-                                    <li>Ver polo</li>
-                                </ul>
-                            </div>
-                        </a>
-                    </div>
-                    <div class=" contenedor_bloque_principal">
-                        <a class="enlace_producto" href="./descripcion.html">
-                            <img src="./img/polo_electrocardiograma.png" alt="">
-                            <div>
-                                <ul>
-                                    <li class="nombre_polo">Cafe electrocardiograma</li>
-                                    <li>RD$600</li>
-                                    <li>Ver polo</li>
-                                </ul>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </section>
+                </fieldset>
+                <button class="boton_agregar" onclick="location.href='./productos.html';">Agregar polo</button>
+            </form>
         </main>
         <footer>
             <section class="pie_inicio">
