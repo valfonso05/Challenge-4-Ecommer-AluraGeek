@@ -12,4 +12,81 @@
     text-align: center;
 }
 
-.inicioseccion_tituloñ
+.inicioseccion_titulo{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #464646;
+}
+
+.entrada_bloque{
+    padding: 16px 0;
+}
+
+.entrada{
+    padding-left: 10px;
+    width: 413px;
+    height: 63.13px;
+    background: #ffffff;
+    border-radius: 4px;
+    border: none;
+    border-bottom: 1px solid #c8c8c8;
+}
+
+.boton_iniciarseccion{
+    color: #ffffff;
+    width: 423px;
+    height: 62px;
+    background: #2a7ae4;
+    border-style: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.boton_iniciarseccion:hover{
+    background: #5595e9;
+
+}
+
+/*Estilos de pantallas para dispositivos*/
+
+
+@media screen and (max-width:768px){
+
+    .formulario .bloque_formulario{
+        width: auto;
+    }
+
+    .entrada{
+        width: 275px;
+        height: 41px;
+    }
+    .boton_iniciarseccion{
+        width: 109px;
+        height: 40px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:360px){
+
+    .formulario .bloque_formulario{
+        width: auto;
+    }
+
+    .entrada{
+        width: 275px;
+        height: 41px;
+    }
+    .boton_iniciarseccion{
+        width: 109px;
+        height: 40px;
+        margin: 0 auto;
+    }
+}
+
