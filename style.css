@@ -140,7 +140,7 @@
 /*Main*/
 
 .cuerpo_principal{
-    padding: 4rem 0.5rem 2rem 0.5rem;
+    padding: 6rem 0.7rem 2rem 0.7rem;
     background: rgb(247, 217, 245);
 }
 
@@ -173,45 +173,44 @@ ul li{
     text-decoration:none;
 }
 
+.contenedor_bloque_principal{
+    margin-bottom: 4rem;
+}
+
 .mujer .mujer_principales{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
 }
 
 .mujer .mujer_descripcion{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-    gap: 16px;
 }
 
 .ninas .ninas_principal{
-    padding-top: 4rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center; 
 }
 
 .ninas .ninas_descripcion{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-    gap: 16px;
 }
 
 .variedad .variedad_principal{
-    padding-top: 4rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center; 
 }
 
 .variedad .variedad_descripcion{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-    gap: 16px;
 }
 
 
@@ -238,7 +237,7 @@ ul li{
 }
 
 .caja_contacto{
-    width: 40%;
+    width: 38%;
 }
 
 .pie_contenedor{
@@ -246,7 +245,7 @@ ul li{
 }
 
 .contacto_formulario{
-    width: 50%;
+    width: 46%;
 }
 
 .contacto{
@@ -384,6 +383,11 @@ ul li{
 
 @media screen and (max-width:768px){
 
+    .boton_login {
+        width: auto;
+        margin-left: 2rem;
+    }
+
     .encabezado{
         
         flex-direction: column;
@@ -414,9 +418,18 @@ ul li{
         order: 0;   
     }
 
-    .mujer_descripcion, .ninas_descripcion, .variedad_descripcion{
+    .mujer_principales, .ninas_principal, .variedad_principal{
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .mujer_descripcion .ninas_descripcion .variedad_descripcion{
         display: flex;
-        flex-direction: column;
+        place-content: space-around;
+    }
+
+    .contenedor_bloque_principal{
+        margin-bottom: 2rem;
     }
 
     .caja_contacto{
@@ -430,7 +443,7 @@ ul li{
 
 }
 
-@media screen and (max-width:360px){
+@media screen and (max-width:414px){
 
     .encabezado_items img{
         width: auto;
@@ -453,9 +466,14 @@ ul li{
         height: 40px;
     }
 
-    .titulo_promocion, .descripcion_promocion{
-        font-size: 22px;
-        line-height: 16px;
+    .cuerpo_principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor_bloque_principal{
+        margin-bottom: 2rem;
     }
 
 }
