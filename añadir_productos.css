@@ -15,10 +15,12 @@
 .titulo_agregar{
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 38px;
-    color: #464646;
+    font-weight: 750;
+    font-size: 35px;
+    line-height: 43px;
+    color: #000000;
+    padding-bottom: 1rem;
+    text-align: center;
 }
 
 .agregar_producto{
@@ -47,19 +49,19 @@
 
 .boton_agregar{
     color: #ffffff;
-    width: 559px;
+    width: 253px;
     height: 51px;
-    background: #2a7ae4;
+    background: rgb(4 190 29);
     border-style: none;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 22px;
     line-height: 19px;
 }
 
 .boton_agregar:hover{
-    background: #5995e9;
+    background: #ca1c73;
 }
 
 /*Configuracion screen para dispositivos dispositivos*/
