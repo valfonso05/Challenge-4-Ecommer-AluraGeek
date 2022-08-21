@@ -65,31 +65,25 @@
 
 .boton_login{
     box-sizing: border-box;
-    color: #2a7ae4;
-    border: 1px solid #2a7ae4;
+    background: rgb(4 190 29);
+    color: white;
+    border: none;
     width: 182px;
     height: 51px;
-}
-
-.boton_login{
+    font-weight: 750;
+    font-size: 16px;
     display: flex;
     justify-content: space-evenly;
     align-items: center; 
 }
 
-
 .boton_login:hover{
-    background: #D4E4FA;
+    background: #ca1c73;
 }
 
 .promocion{
     height: 352px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0.8) 100%), url("./img/bannertienda.jpg") center / cover no-repeat; 
-
-    /*
-    background-position: center;
-    background-repeat: no-repeat;
-    */
 }
 
 .encabezado .promocion{
@@ -134,7 +128,7 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 19px;
 }
 
@@ -175,7 +169,7 @@ ul li{
 }
 
 .cuerpo_principal a{    
-    color: rgb(2, 100, 15);
+    color: rgb(57, 131, 57);
     text-decoration:none;
 }
 
@@ -282,12 +276,12 @@ ul li{
 }
 
 .titulo_contacto{
-    color: black;
+    color: #2a2329;
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
+    font-weight: 750;
+    font-size: 22px;
+    line-height: 28px;
     margin-bottom: 8px;
 }
 
@@ -315,7 +309,7 @@ ul li{
     color: #ffffff;
     width: 144px;
     height: 51px;
-    background: #2a7ae4;
+    background: rgb(4 190 29);
     border-style: none;
     font-family: 'Roboto';
     font-style: normal;
@@ -325,7 +319,7 @@ ul li{
 }
 
 .boton_contacto:hover{
-    background: #5595e9;
+    background: #ca1c73;
 }
 
 /*Pie redes sociales*/
@@ -361,6 +355,22 @@ ul li{
     transform: scale(2)
 }
 
+.boton_extra{
+    box-sizing: border-box;
+    background: rgb(4 190 29);
+    color: white;
+    border: none;
+    width: 100px;
+    height: 50px;
+    font-weight: 300;
+    font-size: 19px; 
+    margin-top: 4rem;
+}
+
+.boton_extra:hover{
+    background: #ca1c73;
+    transform: rotate(30deg);
+}
 
 /*Configuracion screen para dispositivos dispositivos*/
 
