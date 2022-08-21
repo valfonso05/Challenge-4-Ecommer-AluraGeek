@@ -450,7 +450,7 @@ ul li{
 
 }
 
-@media screen and (max-width:414px){
+@media screen and (max-width:360px){
 
     .encabezado_items img{
         width: auto;
