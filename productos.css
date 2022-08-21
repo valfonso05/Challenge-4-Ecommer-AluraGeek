@@ -33,7 +33,8 @@
     color: #ffffff;
     width: 163px;
     height: 51px;
-    background: #2a7ae4;
+    background: #3ead4cff;
+    border-radius: 10%;
     border-style: none;
     font-family: 'Roboto';
     font-style: normal;
@@ -43,7 +44,7 @@
 }
 
 .boton_todos_polos:hover{
-    background: #5595e9;
+    background: rgb(243, 122, 243);
 }
 
 .polos_descripcion{

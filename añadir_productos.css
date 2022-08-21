@@ -5,6 +5,7 @@
     box-sizing: border-box;
     background: rgb(4 190 29);
     color: white;
+    border-radius: 10%;
     border: none;
     width: 182px;
     height: 51px;
@@ -73,11 +74,12 @@
     width: 253px;
     height: 51px;
     background: rgb(4 190 29);
+    border-radius: 10%;
     border-style: none;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 24px;
     line-height: 19px;
 }
 
