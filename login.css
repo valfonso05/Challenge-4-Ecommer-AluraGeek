@@ -1,7 +1,7 @@
 /*Estilos css pagina login*/
 
 .formulario{
-    background: #e5e5e5;
+    background:rgb(247, 217, 245);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,10 +15,10 @@
 .inicioseccion_titulo{
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 21px;
-    color: #464646;
+    font-weight: 600;
+    font-size: 29px;
+    line-height: 20px;
+    color: #4e4040;
 }
 
 .entrada_bloque{
@@ -37,19 +37,20 @@
 
 .boton_iniciarseccion{
     color: #ffffff;
-    width: 423px;
-    height: 62px;
-    background: #2a7ae4;
+    width: 135px;
+    height: 56px;
+    background: #3ead4cff;
+    border-radius: 10%;
     border-style: none;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 19px;
 }
 
 .boton_iniciarseccion:hover{
-    background: #5595e9;
+    background:rgb(243, 122, 243);
 
 }
 
@@ -58,7 +59,7 @@
 
 @media screen and (max-width:768px){
 
-    .formulario .bloque_formulario{
+    .inicioseccion_titulo{
         width: auto;
     }
 
@@ -73,11 +74,7 @@
     }
 }
 
-@media screen and (max-width:360px){
-
-    .formulario .bloque_formulario{
-        width: auto;
-    }
+@media screen and (max-width:414px){
 
     .entrada{
         width: 275px;

@@ -1,7 +1,7 @@
 /*Estilos css de productos relacionados*/
 
-.bloque_polos{
-    background: #e5e5e5;
+.polo_principal{
+    background: rgb(247, 217, 245);
 }
 
 .polo_principal{
@@ -20,10 +20,10 @@
 .nombre_polo_portada{
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 52px;
     line-height: 61px;
-    color: #464646;
+    color: rgb(98 131 98);
     margin-bottom: 16px;
 }
 
@@ -33,7 +33,7 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
-    color: #464646;
+    color: rgb(98 131 98);
     margin-bottom: 16px; 
 }
 
@@ -41,9 +41,13 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 17spx;
     line-height: 19px;
-    color: #464646;
+    color: rgb(83 112 83);
+}
+
+.relacionados{
+    background: rgb(250, 248, 227);
 }
 
 .relacionados .titulo_relacionados{
@@ -89,17 +93,17 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
-    color: #464646;
+    color: rgb(57, 131, 57);
     align-self: stretch;
 }
 
-.coste_polo{
+.precio_polo{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
-    color: #464646;
+    color: rgb(57, 131, 57);
     align-self: stretch;
 }
 
@@ -110,7 +114,7 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
-    color: #464646;
+    color: rgb(57, 131, 57);
 }
 
 /*Configuracion screen para dispositivos dispositivos*/
@@ -130,7 +134,7 @@
 @media screen and (max-width:768px) {
 
     .polo_principal{
-        padding: 16px 5%;
+        padding: 5rem 2rem 5rem 2rem;
     }
 
     .polos_relacionados_info{ 
@@ -169,7 +173,7 @@
     }
     
 }
-@media screen and (max-width:360px) {
+@media screen and (max-width:414px) {
 
     .polo_principal{
         flex-direction: column;
@@ -181,10 +185,8 @@
     }
 
     .polos_relacionados_info{
-        min-height: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
     }
 
     .polos_relacionados_info .bloque_similares{
