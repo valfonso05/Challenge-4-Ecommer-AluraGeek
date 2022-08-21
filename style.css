@@ -392,11 +392,10 @@ ul li{
     }
 
     .encabezado_items{
-        flex-direction: column;
-        margin: 1rem auto;
-        justify-content: left;
+        place-content: space-around;
         margin: 0 auto;
         padding: 10px 0;
+        width: auto;
     }
 
     .encabezado_items img{

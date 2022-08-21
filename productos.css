@@ -1,0 +1,152 @@
+/*Estilos css para productos*/
+
+.polos_bloque{
+  background: rgb(247, 217, 245);;  
+}
+
+.polos_todos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 10%;
+}
+
+.polos_titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 16px;
+}
+
+.titulo_todos_polos{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #0e0d0d;
+}
+
+.boton_todos_polos{
+    color: #ffffff;
+    width: 163px;
+    height: 51px;
+    background: #2a7ae4;
+    border-style: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.boton_todos_polos:hover{
+    background: #5595e9;
+}
+
+.polos_descripcion{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 64px;
+    justify-content: space-between;
+}
+
+.polos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px
+}
+
+.polos_editar{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem;
+    margin-left: 6rem;
+    position: absolute;
+}
+
+.posicion_iconos{
+    padding: 5px;
+}
+
+.iconos{
+    width: 14;
+    height: 18;
+}
+
+.polo_lista{
+    padding-bottom: 32px; 
+ }
+
+.polo_nombre{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #464646;
+    align-self: stretch;
+}
+
+.polo_costo{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+    align-self: stretch;
+}
+
+.polo_orden{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #464646;
+}
+
+/*Estilos de pantalla para dispositivos*/
+
+
+@media screen and (max-width:1280px){
+    .polos_todos{
+        padding: 16px 4%;
+    }
+}
+@media screen and (max-width:768px){
+    .polo_imagen{
+        width: 164px;
+        height: 174px;
+    }
+}
+@media screen and (max-width:360px){
+    .polos_titulo{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .polo_imagen{
+        width: 155px;
+        height: 174px;
+    }
+
+    .polos_editar{
+        padding: 0.75rem;
+        margin-left: 5rem;
+       
+        
+    }
+}
+
+
+
+
+
+
